@@ -2,7 +2,7 @@ package br.com.fiap.webstream.domain.repositories;
 
 import br.com.fiap.webstream.domain.entities.Video;
 import br.com.fiap.webstream.domain.repositories.custom.VideoRepositoryCustom;
-import br.com.fiap.webstream.infra.persistence.VideoRepository;
+import br.com.fiap.webstream.infra.repository.VideoRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Component;

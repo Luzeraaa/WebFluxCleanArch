@@ -1,10 +1,10 @@
 package br.com.fiap.webstream.services;
 
-import br.com.fiap.webstream.application.controller.DTO.VideoDTO;
-import br.com.fiap.webstream.application.controller.DTO.VideoUpdateDTO;
+import br.com.fiap.webstream.application.dto.VideoDTO;
+import br.com.fiap.webstream.application.dto.VideoUpdateDTO;
 import br.com.fiap.webstream.domain.entities.Video;
 import br.com.fiap.webstream.domain.repositories.custom.VideoRepositoryCustom;
-import br.com.fiap.webstream.services.interfaces.VideoServiceInterface;
+import br.com.fiap.webstream.services.interfaces.VideoService;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.AllArgsConstructor;
@@ -17,7 +17,7 @@ import java.util.Date;
 
 @Service
 @AllArgsConstructor
-public class VideoService implements VideoServiceInterface {
+public class VideoServiceImpl implements VideoService {
 
     private final ObjectMapper objectMapper;
 

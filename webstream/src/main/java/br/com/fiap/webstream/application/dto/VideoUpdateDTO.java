@@ -1,4 +1,4 @@
-package br.com.fiap.webstream.application.controller.DTO;
+package br.com.fiap.webstream.application.dto;
 
 import br.com.fiap.webstream.domain.entities.Categoria;
 

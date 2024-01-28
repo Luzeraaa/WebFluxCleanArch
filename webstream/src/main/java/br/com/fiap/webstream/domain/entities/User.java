@@ -12,12 +12,14 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(of = "id")
-public class Usuario {
+public class User {
 
     @Id
-    private Long id;
+    private String id;
 
     private String nome;
+
+    private String email;
 
     private List<Video> videosFavoritos;
 

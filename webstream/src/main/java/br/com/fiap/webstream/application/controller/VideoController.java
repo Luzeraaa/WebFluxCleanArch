@@ -1,9 +1,9 @@
 package br.com.fiap.webstream.application.controller;
 
-import br.com.fiap.webstream.application.controller.DTO.VideoDTO;
-import br.com.fiap.webstream.application.controller.DTO.VideoUpdateDTO;
+import br.com.fiap.webstream.application.dto.VideoDTO;
+import br.com.fiap.webstream.application.dto.VideoUpdateDTO;
 import br.com.fiap.webstream.domain.entities.Video;
-import br.com.fiap.webstream.services.interfaces.VideoServiceInterface;
+import br.com.fiap.webstream.services.interfaces.VideoService;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
@@ -19,7 +19,7 @@ import java.util.Date;
 @AllArgsConstructor
 public class VideoController {
 
-    private final VideoServiceInterface videoService;
+    private final VideoService videoService;
 
     @PostMapping
     public Mono<Video> save(@Valid @RequestBody VideoDTO videoDTO) throws JsonProcessingException {

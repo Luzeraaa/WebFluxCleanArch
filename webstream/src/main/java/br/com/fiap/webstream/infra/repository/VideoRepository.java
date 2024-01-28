@@ -1,4 +1,4 @@
-package br.com.fiap.webstream.infra.persistence;
+package br.com.fiap.webstream.infra.repository;
 
 import br.com.fiap.webstream.domain.entities.Video;
 import org.springframework.data.domain.Pageable;
